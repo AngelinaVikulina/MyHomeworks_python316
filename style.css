@@ -1,0 +1,49 @@
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    height: 100%;
+}
+
+.info__form {
+    height: 100%;
+    margin-top: 50px;
+}
+
+form {
+    justify-content: center;
+    align-items: center;
+    display: flex; 
+    flex-direction: column;
+}
+
+.info__input_long {
+    width: 420px;
+    height: 30px;
+}
+
+.info__input_short {
+    width: 220px;
+    height: 30px;
+}
+
+input{
+    text-align: center;  
+    margin: 10px;
+    display:block;
+}
+
+h2{
+    display: inline-block;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+}
+
+.info__icon{
+    width: 60px;
+    height: 60px;
+}
+

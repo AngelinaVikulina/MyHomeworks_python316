@@ -1,0 +1,47 @@
+.expert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    height: 100%;
+}
+
+.expert__form-container {
+    height: 100%;
+    margin-top: 50px;
+}
+
+form {
+    justify-content: center;
+    align-items: center;
+    display: flex; 
+    flex-direction: row;
+}
+
+.expert__form-wrap{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 60px ;
+    border: 1px solid;
+    padding: 30px;
+}
+
+input{
+    text-align: center;  
+    margin: 10px;
+}
+
+h2{
+    display: inline-block;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: black;
+}
+
+.expert__icon{
+    width: 60px;
+    height: 60px;
+}
+
