@@ -1,0 +1,44 @@
+section .data
+    str1 db "Hellow", 0
+    str2 db 10 dup(0) ; Размер буфера для str2 должен быть достаточным для хранения str1 и "!"
+
+section .text
+    global _start
+
+_start:
+    ; Копирование строки str1 в str2
+    mov esi, str1 ; Исходная строка
+    mov edi, str2 ; Целевая строка
+    mov ecx, 0    ; Счетчик символов
+
+copy_loop:
+    mov al, [esi + ecx]
+    cmp al, 0     ; Проверка на завершающий нулевой символ
+    je add_exclamation
+    
+    mov [edi + ecx], al
+    inc ecx
+    jmp copy_loop
+
+add_exclamation:
+    mov byte [edi + ecx], '!'
+    
+    ; Вывод строки str2
+    mov eax, 4
+    mov ebx, 1
+    mov ecx, str2
+    call print_string
+
+    ; Выход
+    mov eax, 1
+    xor ebx, ebx
+    int 0x80
+
+print_string:
+    ; Вывод строки на экран
+    push edx
+    mov edx, ecx ; Длина строки
+    int 0x80
+    pop edx
+    
+    ret
