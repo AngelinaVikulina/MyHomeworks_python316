@@ -1,0 +1,28 @@
+_start:
+call scan_int
+push eax; поместить еах в стек - это будет ; аргументом для следующей функции
+call print_int; напечатать int, который находится в вершине стека ; в стандартный поток вывода
+"callfunc" эквивалентно
+push<адрес_следующей_инструкции);
+jmpfunc
+call add_num
+push eax
+call print_int
+call mul num
+push eax
+call print int
+mov eax, 1; Эти три строчки эквиваленты exit(0)
+mov ebx,
+int 0x80;
+scan_int:; эта функция должна читать int из stdin, mov eax, 133; но пока она не реализована и просто ret; возвращает число 133
+add_num:
+mov eax, 10
+mov ebx, 20
+add eax,
+ebx
+ret
+mul_num:
+mov eax, 10
+mov ebx, 20
+mul ebxy
+ret
