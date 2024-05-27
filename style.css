@@ -1,133 +1,224 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
+ @keyframes anim{
+	from{margin-left:3px;}
+	to{margin-left:500px;}
 }
-header {
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    height: 72px;
-    box-shadow: 0 -3px 10px rgba(0,0,0,0.3);
-}
-.container {
-    max-width: 1124px;
-    width: 1124px;
-}
-.header__flex {
-    display: flex;
-    justify-content: space-between;
-}
-.header__flex a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 70px;
-    padding: 5px;
-    text-decoration: none;
-    border: 1px solid black;
-    color: black;
-    border-radius: 10px;
-    font-weight: 600;
-}
-.header__flex img {
-    margin-left: 3%;
-    margin-right: 4px;
-}
-.header__flex nav {
-    display: flex;
-    justify-content: space-between;
-}
-.header__flex nav img {
-    margin-left:23px;
-    margin-right: 101px;
-}
-.search {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-.search input{
-    width: 100%;
-}
-.restor {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 89px;
-}
-.restor .container > p { 
-    font-size: 22px;
-    margin-top: 56px;
-    margin-left: 1%;
-    margin-bottom: 0;
-}
-.restor__price {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap:wrap;
-    margin-left: 1%;
-}
-.restor__price__elem {
-    flex: 0 308px;
-    margin-top: 36px;
-}
-.restor__price__elem p:nth-child(2) {
-    font-size: 16px;
-}
-.restor__price__elem p:nth-child(3) {
-    font-size: 14px;
-    color: #626262;
-}
-.restor__price__elem p:nth-child(4) {
-    font-size: 13px;
-    color: #1D1D1D;
+#d{
+	animation:anim 4s 3;
+} 
+#d{
+width: 50px;
+height: 50px;
+border: 1px solid red;
 }
 
-.bottom{
-    background-color: #131313;
-    padding: 60px;
-    color: white;
+ @keyframes anim1{
+	from{margin-left:0%;}
+	to{margin-left:105%;}
 }
-.select{
-    background-color: #202020;
-    color: white;
-    border: none;
-    width: 250px;
-    height: 40px;
-}
-.bottom__links, .bottom__images, .bottom__text{
-    display: flex;
-    align-items: center;
-    border-top: #626262 1px solid;
-    margin: 20px;
-    padding-top: 20px;
-}
-.bottom__links, .bottom__text{
-    justify-content: space-between;
+#d1{
+	animation:anim1 4s infinite;
+} 
+#d1{
+margin-top: 100px;
+width: 50px;
+height: 50px;
+border: 1px solid red;
 }
 
-.bottom__links__colomn{
-    display: block;
-    margin-right: 20%;
+ @keyframes anim2{
+	from{background-color: white;}
+	to{background-color: red;}
+} 
+#d2{
+	animation:anim2 4s 3;
+} 
+#d2{
+margin-top: 100px;
+width: 50px;
+height: 50px;
+border: 1px solid red;
 }
 
-.bottom__images{
-    justify-content: space-evenly;
+
+
+ @keyframes anim3{
+	0%{margin-left: 0%; margin-top: 0%;}
+	25%{margin-left: 50%; margin-top: 0%;}
+	50%{margin-left: 50%; margin-top: 20%;}
+	75%{margin-left: 0%; margin-top: 20%;}
+	100%{margin-left: 0%; margin-top: 0%;}
+} 
+
+#d3{
+	-webkit-animation: anim3 8s linear 3;
+	animation: anim3 8s linear 3;
 }
-.moveup a{
-    display: flex;
-    position: fixed;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    top: 600px;
-    right: 20px;
-    background-color: #359e35;
-    transition: 0.5s;
+#d3{
+	margin-top: 100px;
+	width: 50px;
+	height: 50px;
+	border: 1px solid red;
 }
-.moveup a:hover{
-    transition: 0.5s;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.265);
-    background-color: #1b7e1b;
+
+ @keyframes anim4{
+	from{background-color: white;
+    }
+	to{background-color: red;
+    }
+}
+@keyframes anim4_1{
+	0%{margin-left: 0%; margin-top: 0%;}
+	25%{margin-left: 50%; margin-top: 0%;}
+	50%{margin-left: 50%; margin-top: 20%;}
+	75%{margin-left: 0%; margin-top: 20%;}
+	100%{margin-left: 0%; margin-top: 0%;}
+} 
+
+#d4{
+	animation-name: anim4, anim4_1;
+    animation-duration: 8s, 8s;
+    animation-iteration-count: 3, 3;
+	animation-timing-function: linear, linear;
+}
+#d4{
+	margin-top: 100px;
+	width: 50px;
+	height: 50px;
+	border: 1px solid red;
+}
+
+ @keyframes anim5{
+	0%{margin-left: 0%;}
+	50%{margin-left: 50%;}
+	100%{margin-left: 100%;}
+} 
+
+#d5{
+    animation: anim5 6s 5 ease alternate;
+}
+#d5{
+	margin-top: 100px;
+	width: 50px;
+	height: 50px;
+	border: 1px solid red;
+}
+
+ @keyframes anim6{
+	0%{width: 0%;}
+	100%{width: 100%;}
+} 
+
+#wrapper{
+	margin: 0px auto;
+	width: 50%;
+	height: 30px;
+	border: 1px solid red;
+
+}
+#d6{
+	background: red;
+	width: 0%;
+	height: 30px;
+	
+	-webkit-animation:anim6 5s linear 1 forwards;
+	animation:anim6 5s linear 1 forwards;
+}
+
+@keyframes anim7{
+	from{margin-left:0%;}
+	to{margin-left:100%;}
+} 
+
+#d7{
+	margin-top: 100px;
+	width: 100px;
+	height: 50px;
+	border: 1px solid red;
+	
+	animation-play-state: paused;
+	animation-duration:1s;
+	animation-name: anim7;
+	animation-iteration-count: infinite;
+	animation-timing-function:linear;
+}
+#d7:hover{
+	animation-play-state: running;
+}
+
+@keyframes anim7_1{
+	from{margin-left:0%;}
+	to{margin-left:100%;}
+}  
+
+
+#d7_1{
+	margin-top: 100px;
+	border: 1px solid red;
+	width: 350px;
+	height: 50px;
+}
+#d7_1_1{
+	margin-top: 100px;
+	border: 1px solid blue;
+	width: 350px;
+	height: 50px;
+
+	animation-play-state: paused;
+	animation-duration:3s;
+	animation-name: anim7_1;
+	animation-iteration-count: infinite;
+	animation-timing-function:linear;
+}
+#d7_1:hover + #d7_1_1{
+	animation-play-state:running;
+}
+
+.block_d8{
+	margin: 100px 0px 0px 0px;
+}
+@keyframes anim8{
+	40%, 70%, 90%{
+		animation-timing-function: ease-out;
+		bottom: 0;
+	}
+	0%{
+		bottom: 200px;
+		left: 0;
+		animation-timing-function: ease-in;
+	}
+	55%{
+		bottom: 50px;
+		animation-timing-function: ease-in;
+	}
+	80%{
+		bottom: 25px;
+		animation-timing-function: ease-in;
+	}
+	95%{
+		bottom: 10px;
+		animation-timing-function: ease-in;
+	}
+	100%{
+		left: 110px;
+		bottom: 0;
+		animation-timing-function: ease-out;
+	}
+}
+
+
+#wrapper_d8{
+	margin: 0px auto;
+	width: 220px;
+	height: 220px;
+	border: 1px solid red;
+	position: relative;
+}
+#d8{
+	background: red;
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	position: absolute;
+	
+	animation: anim8 5s infinite;
 }
